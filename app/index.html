@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<meta name="description" content="Offline guide and checklist for all 55 PlayStation 5 trophies of Grand Theft Auto VI. No account, no network needed.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffd166'/%3E%3Cstop offset='.55' stop-color='%23ff5e8a'/%3E%3Cstop offset='1' stop-color='%2337e0c8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7' fill='%23150a24'/%3E%3Ccircle cx='16' cy='17' r='9' fill='url(%23g)'/%3E%3Crect x='6' y='22' width='20' height='2' fill='%23ffd166'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Atlas</h1>
+    <p class="tagline">Every trophy, every guide, one checklist. Built for the long road to the platinum — and it works with the network off.</p>
+    <div class="progress-wrap" aria-label="Overall progress">
+      <div class="progress-head"><span id="progressText">0 / 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar"><div id="progressFill" style="width:0%"></div></div>
+      <p class="progress-sub" id="progressSub">Tick trophies as you earn them. Your progress is saved in this browser only.</p>
+    </div>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Guide controls">
+  <div class="toolbar-row">
+    <input id="search" type="search" placeholder="Search trophies, missions, places…" aria-label="Search trophies">
+    <select id="gradeFilter" aria-label="Filter by grade">
+      <option value="">All grades</option>
+      <option value="Platinum">Platinum</option>
+      <option value="Gold">Gold</option>
+      <option value="Silver">Silver</option>
+      <option value="Bronze">Bronze</option>
+    </select>
+    <select id="statusFilter" aria-label="Filter by status">
+      <option value="">All trophies</option>
+      <option value="earned">Earned only</option>
+      <option value="unearned">Not earned yet</option>
+      <option value="missable">Missable only</option>
+    </select>
+    <label class="toggle"><input type="checkbox" id="spoilerToggle" checked> <span>Hide story spoilers</span></label>
+  </div>
+  <div class="toolbar-row kinds" id="kindFilters" role="group" aria-label="Filter by kind">
+    <button data-kind="" class="kind-btn active">All kinds</button>
+    <button data-kind="story" class="kind-btn">Story</button>
+    <button data-kind="side" class="kind-btn">Side missions</button>
+    <button data-kind="activity" class="kind-btn">Activities</button>
+    <button data-kind="combat" class="kind-btn">Combat</button>
+    <button data-kind="collectible" class="kind-btn">Collectibles</button>
+    <button data-kind="exploration" class="kind-btn">Exploration</button>
+    <button data-kind="crime" class="kind-btn">Crime</button>
+    <button data-kind="money" class="kind-btn">Money</button>
+    <button data-kind="completion" class="kind-btn">Completion</button>
+  </div>
+  <div class="toolbar-row actions">
+    <button id="exportBtn" type="button">Export progress (.json)</button>
+    <label class="import-label" for="importFile">Import progress</label>
+    <input id="importFile" type="file" accept=".json,application/json" hidden>
+    <button id="resetBtn" type="button" class="danger">Reset checklist</button>
+    <span id="saveNote" class="save-note" role="status"></span>
+  </div>
+</nav>
+
+<main>
+  <section id="roadmap" class="roadmap" aria-labelledby="roadmapTitle">
+    <h2 id="roadmapTitle">Roadmap to the Platinum</h2>
+    <p class="roadmap-intro">One playthrough is enough, everything is offline, and there are no online trophies. PowerPyx rates the set 4/10 and estimates about 200 hours; PushSquare puts it closer to 300. Cheats disable trophies and saving, so leave them alone.</p>
+    <ol class="steps">
+      <li>
+        <h3>Step 1 — Play the story, watch Chapter 1</h3>
+        <p>Enjoy the five chapters (roughly 60–80 hours). The <strong>only possibly missable trophy</strong> lives here: in Chapter 1, after the mission Down to Earth, follow Lucia to the balcony when she talks about meditating and accept. See <strong>Positive Mental Attitude</strong> below. Scan vehicles with WAiNK and study animals with binoculars as you go — both count toward 100% later. Keep a manual save at the start and end of each chapter; there is no mission replay.</p>
+      </li>
+      <li>
+        <h3>Step 2 — 100% Completion checklist</h3>
+        <p>After the final mission, open Progress &gt; Stats &gt; 100% Completion. It is far kinder than it sounds — closer to 60% true completion, with most side quests not required and many collectibles only partly required. You need all robberies, underwater discoveries, shooting ranges, drone races and Bret's quests, plus 70 of 80 challenges. Finishing it earns <strong>A Long Road</strong> and most of the remaining trophies along the way.</p>
+      </li>
+      <li>
+        <h3>Step 3 — Strangers &amp; Freaks and cleanup</h3>
+        <p>Finish the eight qualifying stranger strands, the five character questlines (Andy, Kenton, Billy, Randy, Tyrone, Bret), and any stray trophies left — the easter eggs, the tank, the plane at VCIA, the UFO. Then the Platinum, <strong>Vice Got a Price!</strong>, pops.</p>
+      </li>
+    </ol>
+    <div class="missable-callout" id="missableCallout">
+      <strong>Missable watch:</strong> <span id="missableText">Positive Mental Attitude — one meditation in Chapter 1 at Jason's house may be required and is gone after Chapter 1. Do it before Paradise Lost pops.</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="listTitle">
+    <h2 id="listTitle">All 55 trophies</h2>
+    <p id="countLine" class="count-line"></p>
+    <p id="emptyNote" class="empty-note" hidden>No trophies match your filters. Clear the search or pick another kind.</p>
+    <div id="trophyList" class="trophy-list"></div>
+  </section>
+
+  <section class="sources" aria-labelledby="sourcesTitle">
+    <h2 id="sourcesTitle">Sources &amp; notes</h2>
+    <p>Trophy names and descriptions are the consensus of the published lists below, all written from the finished game in November 2026. Where sources disagreed — for example, one list describes the final-mission Gold as “Complete Chapter 5” while the others say “Complete the final mission” — this guide uses the majority reading and says so in the trophy's guide text. The exact unlock method for <strong>Bad Luck, I Guess</strong> was still unconfirmed when this guide was researched; its entry says so plainly rather than guessing. Rockstar has not published its own standalone trophy list.</p>
+    <ul>
+      <li>PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</li>
+      <li>PushSquare — GTA 6: Trophy Guide &amp; Roadmap</li>
+      <li>Insider Gaming — Complete GTA 6 Trophy List</li>
+    </ul>
+    <p class="fineprint">Unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive / Rockstar Games. This guide uses no Rockstar logo or official artwork; all visuals are original. Guides are written in the author's own words; sources are cited, never copied.</p>
+  </section>
+</main>
+
+<div id="detailOverlay" class="overlay" hidden>
+  <div class="detail" role="dialog" aria-modal="true" aria-labelledby="detailName">
+    <button id="detailClose" class="detail-close" type="button" aria-label="Close details">&times;</button>
+    <p class="detail-grade"><span id="detailGradeIcon" aria-hidden="true"></span><span id="detailGrade"></span></p>
+    <h2 id="detailName"></h2>
+    <p id="detailDesc" class="detail-desc"></p>
+    <p class="detail-meta" id="detailMeta"></p>
+    <h3>How to unlock it</h3>
+    <p id="detailGuide"></p>
+    <h3>Sources</h3>
+    <p id="detailSources" class="detail-sources"></p>
+    <label class="detail-check"><input type="checkbox" id="detailEarned"> <span>I have earned this trophy</span></label>
+  </div>
+</div>
+
+<footer>
+  <p>Leonida Trophy Atlas — an offline, unofficial GTA VI trophy guide. Progress never leaves your browser.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
